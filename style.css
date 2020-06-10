@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'BentonSans';
+    src: url('fonts/BentonSans-Light.eot');
+    src: url('fonts/BentonSans-Lightd41d.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BentonSans-Light.woff2') format('woff2'),
+        url('fonts/BentonSans-Light.woff') format('woff'),
+        url('fonts/BentonSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'BentonSans';
+    src: url('fonts/BentonSans-Thin.eot');
+    src: url('fonts/BentonSans-Thind41d.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BentonSans-Thin.woff2') format('woff2'),
+        url('fonts/BentonSans-Thin.woff') format('woff'),
+        url('fonts/BentonSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+::-moz-selection { background: #232323; }
+::selection { background: #232323; }
+
+@media (min-width: 1900px) {
+	.tag2 {margin-right: 10vw !important;}
+}
+.cleverbirds {position: absolute; color: #FFF; z-index: 9; bottom: 30px; left: 20px; font-family: 'BentonSans'; font-weight: 300; font-size: 13px;}
+.cleverbirds a {color: #FFF !important;}
+/* SCROLLBAR */
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.0);
+	background-color: #161616;
+	
+}
+body::-webkit-scrollbar
+{
+	width: 5px;
+	background-color: #fff;
+	
+}
+body::-webkit-scrollbar-thumb
+{
+	background-color: #fff;
+	min-height: 200px;
+
+}
+/* END SCROLLBAR */
+
+
+body {padding: 0; margin: 0; overflow-x: hidden;}
+
+/* html {
+  scroll-behavior: smooth;
+} */
+
+* {outline: 0 !important;}
+
+/* progress bar */
+.progress 
+{
+ position: fixed;
+ left: 0px;
+ top: 0px;
+ width: 100%;
+ height: 100%;
+ z-index: 9999;
+ background-color: #FFF;
+}
+.bar 
+{ 
+  background-color: #161616; 
+  width:0%; 
+  height:100vh; 
+  border-radius: 3px; 
+}
+.percent 
+{ 
+  position:absolute; 
+  display:inline-block; 
+  top:3px; 
+  left:48%; 
+}
+#wrapper
+{
+  width:995px;
+  padding:0px;
+  margin:0px auto;
+  font-family:helvetica;
+  text-align:center;
+}
+/* END Progress bar */
+
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+	
+	.cleverbirds {left: 0 !important; right: 0 !important; margin-left: auto; margin-right: auto; text-align: center; bottom: 20px !important;}
+	
+	.hero {background-position: center center; margin-top: 0 !important;}
+	.tag h1 {font-size: 34px !important; line-height: 46px !important; padding: 0 10px;}
+	.tag2 {float: none !important; text-align: center !important; margin-right: 0 !important;}
+	.end-valign h1 {padding: 0 10px; line-height: 64px;}
+	.text-valign h1 {padding: 0 10px;}
+	.nav {padding: 30px 0 !important;}
+	.krnl-black {max-width: 110px !important;}
+	.bw-valign img {max-width: 100% !important;}
+	.bw {max-height: 100vh;}
+	.bottom-tag h1 {font-size: 32px !important;}
+	.image-section#poison, .image-section#your {max-width: 80% !important;}
+	.image-section#your h1 {font-size: 60px !important; right: -50px !important; mix-blend-mode: unset !important; -webkit-mix-blend-mode: unset !important;}
+	.image-section#poison h1 {font-size: 60px !important; left: -60px !important; mix-blend-mode: unset !important; -webkit-mix-blend-mode: unset !important;}
+	.end-valign h1 {font-size: 48px !important;}
+	.nav {position: relative !important;}
+	.bottom-tag {bottom: 50px !important;}
+	.v-top {display: none;}
+}
+
+
+
+
+
+.nav {background: #FFF; text-align: center; width: 100%; position: fixed; top: 0; left: 0; right: 0; z-index: 99; padding: 50px 0px; box-shadow: 0px 0px 20px rgba(0,0,0,0.05); -webkit-box-shadow: 0px 0px 20px rgba(0,0,0,0.05);}
+
+.hero {background-image: url(images/hero.jpg); width: 100%; clear: both; height: 100vh; background-size: cover; background-repeat: no-repeat; display: table; margin-top: 130px;}
+.tag {color: #FFF; text-align: center; vertical-align: middle; display: table-cell; }
+.tag2 {float: right; margin-right: 5vw;}
+.tag h1 {font-size: 44px; line-height: 60px; margin-bottom: 20px;}
+h1 {font-family: 'BentonSans'; font-weight: 100; letter-spacing: -0.01em;}
+.line {max-width: 160px;}
+
+.krnl-black {max-width: 124px; margin-top: 10px;}
+
+.leftright {float: left; clear: both; position: relative;}
+.left-img {float: left; width: 50%;}
+.right-img {float: left; width: 50%;}
+
+h2 {font-family: 'Open Sans', sans-serif; font-weight: 700; font-size: 12px; letter-spacing: 2px;}
+.bw {float: left; clear: both; width: 100%; position: relative; height: 130vh; background-image: url(images/split.jpg); background-size: cover; display: table; background-position: center center;}
+.bw-valign {display: table-cell; vertical-align: middle; text-align: center;}
+.bw-valign img {max-width: 750px; margin-top: -50px;}
+.bottom-tag h1 {margin-bottom: 20px; font-size: 44px; color: #FFF;}
+.bottom-tag {text-align: center; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; bottom: 170px; color: #fff;}
+.v-top {max-width: 100vw; margin-top: -110px; position: relative; z-index: 3;}
+
+.text-bg {display: table; width: 100%; height: 80vh;}
+.text-valign {display: table-cell; vertical-align: middle; text-align: center;}
+.text-valign h1 {line-height: 42px;}
+
+.image-section {width: 100%; height: 100vh; float: left; clear: both; background-size: cover; background-position: center center; background-repeat: no-repeat;}
+.image-section#pick {background-image: url(images/pick.jpg); }
+.image-section#your {background-image: url(images/your.jpg); max-width: 75%; float: left;}
+.image-section#poison {background-image: url(images/poison.jpg); max-width: 75%; float: right;}
+
+.in-between {text-align: center; width: 100%; float: left; clear: both; height: 100vh; display: table;}
+.in-between h1 {display: table-cell; vertical-align: middle; margin: 0; padding: 0; font-size: 40px;}
+
+.in-between.white {background: #FFF;}
+.in-between.white h1 {color: #161616; font-weight: 100;}
+.in-between.black {background: #161616;}
+.in-between.black h1 {color: #FFF;}
+
+.image-section#pick {position: relative; background-position: top center;}
+.v-top2 {width: 100vw; top: 0px; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto;}
+
+.end {display: table; height: 100vh; background: #161616; width: 100%; position: relative;}
+.end-valign {display: table-cell; vertical-align: middle; color: #FFF; text-align: center;}
+.end-valign h1 {font-size: 56px; margin-bottom: 25px;}
+.end-valign h2 a {text-transform: uppercase; color: #FFF !important; text-decoration: none !important;}
+
+.v-bottom2 {position: absolute; top: 0px; width: 100vw; z-index: 3;}
+.end-valign h2 a, .end-valign h2 a:hover {transition: all 0.4s ease; -webkit-transition: all 0.4s ease;}
+.end-valign h2 a:hover {opacity: 0.25}
+
+.end {z-index: 999;}
+
+.krnl-white {max-width: 100px; position: absolute; left: 0; right: 0; margin-left: auto; margin-right: auto; bottom: 30px;}
+
+.image-section#your {position: relative;}
+.image-section#your h1 {position: absolute; z-index: 5; right: -80px; font-size: 80px; top: 35%; letter-spacing: -0.04em; mix-blend-mode: overlay; -webkit-mix-blend-mode: overlay;}
+.in-between.white h1 {font-size: 60px;}
+
+.image-section#poison {margin-top: 200px; margin-bottom: 200px;}
+.image-section#poison {position: relative;}
+.image-section#poison h1 {position: absolute; z-index: 5; left: -120px; font-size: 80px; top: 35%; letter-spacing: -0.04em; mix-blend-mode: overlay; -webkit-mix-blend-mode: overlay;}
+
