@@ -1,145 +1,64 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html>
-
-
-<head>
-<meta charset="utf-8">
-<title>OxiSilver| OxS</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-<link rel="stylesheet" href="style.css">
-<script src="jquery.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans:700,800&amp;display=swap" rel="stylesheet">
-
-<script>
-
-$(function() {
-// Smooth scroll anchors
-$('a[href*="#"]').on('click', function(e) {
-  e.preventDefault()
-
-  $('html, body').animate(
-    {
-      scrollTop: $($(this).attr('href')).offset().top,
-    },
-    1000,
-    'linear'
-  )
-});
-
-
-
-});
-
-
-<!-- progress bar -->
-document.onreadystatechange = function(e) {
-  if(document.readyState=="interactive") {
-    var all = document.getElementsByTagName("*"),
-				max = all.length,
-				step = 100 / max,
-				progress = step;
-		
-		for (var i=0; i++ < max; progress += step) {
-			pageProgress(progress, all[i]);
-		}
-  }
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
 }
-
-function pageProgress(step, el) {
-	if ($(el).on()) {
-		$("#bar1").animate({ width: step + "%"}, 10, function(){
-			if(document.querySelector("#bar1").style.width.slice(0,-1) >= 99.5) {
-				$(".progress").fadeOut("slow");
-			}
-		});
-	} else {
-		setTimeout(pageProgress(step, el), 500);
-	}
+​
+.bgimg {
+  background-image: url('../forestbridge.jpg');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
 }
-
-</script>
-
-</head>
-
+​
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+​
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+​
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+​
+hr {
+  margin: auto;
+  width: 40%;
+}
+</style>
 <body>
-
-
-<div class='progress' id="progress_div">
-	<div class='bar' id='bar1'></div>
-	<div class='percent' id='percent1'></div>
+​
+<div class="bgimg">
+  <div class="topleft">
+    <p>Logo</p>
+  </div>
+  <div class="middle">
+    <h1>COMING SOON</h1>
+    <hr>
+    <p>35 days left</p>
+  </div>
+  <div class="bottomleft">
+    <p>Some text</p>
+  </div>
 </div>
-
-
-	<div class="nav">
-    	<a href="#home"><img class="krnl-black" src="images/krnl-black.png" alt="OxS"></a>
-    </div>
-    
-    <div class="hero" id="home">
-    	<div class="tag">
-        	<div class="tag2">
-                <h1>A new lipstick made <br>for the runway</h1>
-                <p><img class="line" src="images/line.png"></p>
-            </div>
-        </div>
-    </div>
-    
-    <div class="leftright">
-    	<img class="left-img" src="images/left.jpg">
-        <img class="right-img" src="images/right.jpg">
-    </div>
-    
-    <div class="bw">
-    	<div class="bw-valign"><img src="images/lipstick.png"></div>
-        <div class="bottom-tag">
-        	<h1>Beeswax, flower petals</h1>
-            <h2>INGREDIENTS</h2>
-        </div>
-	</div>
-    <img class="v-top" src="images/v-top.png">
-    
-    <div class="text-bg">
-    	<div class="text-valign">
-        	<h1>A collection of luxury lipstick expressions <br>using the most natural ingredients possible.</h1>
-            <h2>WHO WE ARE</h2>
-        </div>
-    </div>
-    
-    
-    
-    <div class="image-section" id="pick"><img class="v-top2" src="images/v-top2.png"></div>
-    
-    <div class="in-between white"><h1>Pick</h1></div>
-    
-    <div class="image-section" id="your"><h1>Your</h1></div>
-    
-    
-    <div class="image-section" id="poison"><h1>Poison</h1></div>
-
-    
-    
-    
-    <div class="end">
-    <img class="v-bottom2" src="images/v-top2.png">
-    <a href="#home"><img class="krnl-white" src="images/krnl-white.png"></a>
-    	<div class="end-valign">
-            <h1>Spring 2020</h1>
-            <h2><a href="mailto:nitsoona@gmail.com">nitsoona@gmail.com</a></h2>
-        </div>
-        
-        <div class="cleverbirds">Site by <a target="_blank" href="https://www.oxisilver.com/">OxiSilver</a></div>
-        
-    </div>
-    
-<!-- Smooth site scroll -->
-<!--
-<script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="js/jquery.easeScroll.js"></script>
-<script>
-$("html").easeScroll();
-</script>
--->
-
+​
 </body>
-
-<!-- Mirrored from www.kr-nl.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 09 Jun 2020 14:21:55 GMT -->
 </html>
+​
